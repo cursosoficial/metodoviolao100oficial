@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Curso de Violão - PreSell</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .background {
+      background-image: url('imagem-de-fundo.png');
+      background-size: cover;
+      background-position: center;
+      filter: blur(4px);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    .cookie-box {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      padding: 25px 30px;
+      max-width: 450px;
+      width: 90%;
+      text-align: left;
+    }
+
+    .cookie-header {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .cookie-text {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.5;
+    }
+
+    .cookie-buttons {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 20px;
+    }
+
+    .btn-accept {
+      background-color: #ff6600;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn-accept:hover {
+      background-color: #e65c00;
+    }
+
+    .btn-close {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      font-size: 14px;
+      color: #999;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    .btn-close:hover {
+      color: #333;
+    }
+
+    @media (max-width: 480px) {
+      .cookie-box {
+        padding: 20px;
+      }
+
+      .cookie-buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .btn-accept {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background"></div>
+  <div class="overlay"></div>
+
+  <div class="cookie-box">
+    <div class="btn-close" onclick="redirect()">Fechar</div>
+    <div class="cookie-header">Política de Cookies</div>
+    <div class="cookie-text">
+      Este site utiliza cookies para oferecer a melhor experiência possível. Ao clicar em <strong>Aceitar</strong>, você concorda com o uso de cookies.
+    </div>
+    <div class="cookie-buttons">
+      <button class="btn-accept" onclick="redirect()">Aceitar</button>
+    </div>
+  </div>
+
+  <script>
+    function redirect() {
+      window.location.href = "https://go.hotmart.com/J101910494X";
+    }
+  </script>
+
+</body>
+</html>
